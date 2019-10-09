@@ -57,12 +57,12 @@ const DivLogo = styled.div`
 
 const DivItems = styled.div``;
 
-const Toolbar = props => {
+const Toolbar = ({ drawerClickHandler }) => {
   return (
     <Header className="toolbar">
       <Nav className="toolbar__navigation">
         <div className="toolbar__toggle-button">
-          <DrawerToggleButton />
+          <DrawerToggleButton click={drawerClickHandler} />
         </div>
         <DivLogo className="toolbar__logo">
           <ALogo href="/">The Logo</ALogo>

@@ -24,8 +24,8 @@ const DivLine = styled.div`
   background: white;
 `;
 
-const DrawerToggleButton = props => (
-  <Button className="toggle-button">
+const DrawerToggleButton = ({ click }) => (
+  <Button className="toggle-button" onClick={click}>
     <DivLine className="toggle-button__line" />
     <DivLine className="toggle-button__line" />
     <DivLine className="toggle-button__line" />
