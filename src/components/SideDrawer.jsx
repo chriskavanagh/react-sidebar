@@ -12,12 +12,8 @@ const Nav = styled.nav`
   z-index: 200;
   max-width: 300px;
   transform: translateX(${props => (props.open ? "0" : "-100%")});
-  transition: transform 0.8s ease-out;
+  transition: transform 0.5s ease-out;
 `;
-
-/* const NavOpen = styled(Nav)`
-  transform: translateX(0);
-`; */
 
 const UL = styled.ul`
   list-style: none;
@@ -43,21 +39,6 @@ const A = styled.a`
   }
 `;
 
-/* function SideDrawerClosed(props) {
-  return (
-    <Nav className="side-drawer">
-      <UL>
-        <Li>
-          <A href="/">Products</A>
-        </Li>
-        <Li>
-          <A href="/">Users</A>
-        </Li>
-      </UL>
-    </Nav>
-  );
-} */
-
 function SideDrawer(props) {
   console.log(props);
   return (
@@ -73,32 +54,5 @@ function SideDrawer(props) {
     </Nav>
   );
 }
-
-/* const SideDrawer = ({ open, sideHandler }) => {
-  console.log(open);
-  if (open) {
-    return <SideDrawerOpen openSide={sideHandler} />;
-  }
-  return <SideDrawerClosed />;
-}; */
-
-/* const SideDrawer = ({ open }) => {
-  let drawerClass = "side-drawer";
-  if (open) {
-    drawerClass = "side-drawer open";
-  }
-  return (
-    <nav className={drawerClass}>
-      <ul>
-        <li>
-          <a href="/">Users</a>
-        </li>
-        <li>
-          <a href="/">Products</a>
-        </li>
-      </ul>
-    </nav>
-  );
-}; */
 
 export default SideDrawer;
