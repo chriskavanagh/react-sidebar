@@ -24,12 +24,14 @@ const DivLine = styled.div`
   background: #fff;
 `;
 
-const DrawerToggleButton = ({ click }) => (
-  <Button className="toggle-button" onClick={click}>
-    <DivLine className="toggle-button__line" />
-    <DivLine className="toggle-button__line" />
-    <DivLine className="toggle-button__line" />
-  </Button>
-);
+const CloseButton = ({ click }) => {
+  return (
+    <Button>
+      <DivLine className="toggle-button__line" />
+      <DivLine className="toggle-button__line" />
+      <DivLine className="toggle-button__line" />
+    </Button>
+  );
+};
 
-export default DrawerToggleButton;
+export default CloseButton;

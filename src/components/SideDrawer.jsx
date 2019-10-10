@@ -1,4 +1,5 @@
 import React from "react";
+import CloseButton from "./CloseButton";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -39,7 +40,7 @@ const A = styled.a`
   }
 `;
 
-function SideDrawer(props) {
+const SideDrawer = props => {
   console.log(props);
   return (
     <Nav open={props.open}>
@@ -53,6 +54,6 @@ function SideDrawer(props) {
       </UL>
     </Nav>
   );
-}
+};
 
 export default SideDrawer;
