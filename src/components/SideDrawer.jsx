@@ -1,5 +1,4 @@
 import React from "react";
-import DrawerToggleButton from "./DrawerButton";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -12,14 +11,13 @@ const Nav = styled.nav`
   width: 50%;
   z-index: 200;
   max-width: 300px;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-out;
-  background-color: gray;
+  transform: translateX(${props => (props.open ? "0" : "-100%")});
+  transition: transform 0.8s ease-out;
 `;
 
-const NavOpen = styled(Nav)`
+/* const NavOpen = styled(Nav)`
   transform: translateX(0);
-`;
+`; */
 
 const UL = styled.ul`
   list-style: none;
@@ -27,7 +25,6 @@ const UL = styled.ul`
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-right: 25px;
 `;
@@ -46,7 +43,7 @@ const A = styled.a`
   }
 `;
 
-function SideDrawerClosed(props) {
+/* function SideDrawerClosed(props) {
   return (
     <Nav className="side-drawer">
       <UL>
@@ -59,13 +56,12 @@ function SideDrawerClosed(props) {
       </UL>
     </Nav>
   );
-}
+} */
 
-function SideDrawerOpen({ open }) {
-  console.log(open);
+function SideDrawer(props) {
+  console.log(props);
   return (
-    <NavOpen className="side-drawer">
-      <DrawerToggleButton click={open} />
+    <Nav open={props.open}>
       <UL>
         <Li>
           <A href="/">Products</A>
@@ -74,16 +70,35 @@ function SideDrawerOpen({ open }) {
           <A href="/">Users</A>
         </Li>
       </UL>
-    </NavOpen>
+    </Nav>
   );
 }
 
-const SideDrawer = ({ open, sideHandler }) => {
+/* const SideDrawer = ({ open, sideHandler }) => {
   console.log(open);
   if (open) {
-    return <SideDrawerOpen open={sideHandler} />;
+    return <SideDrawerOpen openSide={sideHandler} />;
   }
   return <SideDrawerClosed />;
-};
+}; */
+
+/* const SideDrawer = ({ open }) => {
+  let drawerClass = "side-drawer";
+  if (open) {
+    drawerClass = "side-drawer open";
+  }
+  return (
+    <nav className={drawerClass}>
+      <ul>
+        <li>
+          <a href="/">Users</a>
+        </li>
+        <li>
+          <a href="/">Products</a>
+        </li>
+      </ul>
+    </nav>
+  );
+}; */
 
 export default SideDrawer;

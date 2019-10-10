@@ -52,10 +52,8 @@ const DivSpacer = styled.div`
 `;
 
 const DivLogo = styled.div`
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 `;
-
-const DivItems = styled.div``;
 
 const Toolbar = ({ drawerClickHandler }) => {
   return (

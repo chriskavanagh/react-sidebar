@@ -26,7 +26,7 @@ function App() {
   return (
     <div style={{ height: "100%" }}>
       <Toolbar drawerClickHandler={clickHandler} />
-      <SideDrawer open={sideDrawer} sideHandler={clickHandler} />
+      <SideDrawer open={sideDrawer} />
       {backdrop}
       <main style={{ marginTop: "64px" }}>
         <p>This is the page content!</p>

@@ -21,7 +21,7 @@ const Button = styled.button`
 const DivLine = styled.div`
   width: 30px;
   height: 2px;
-  background: white;
+  background: blue;
 `;
 
 const DrawerToggleButton = ({ click }) => (
