@@ -21,7 +21,7 @@ const Button = styled.button`
 const DivLine = styled.div`
   width: 30px;
   height: 2px;
-  background: #fff;
+  background: white;
 `;
 
 const CloseButton = ({ click }) => {
