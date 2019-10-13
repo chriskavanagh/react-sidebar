@@ -1,6 +1,7 @@
 import React from "react";
-import CloseButton from "./CloseButton";
+//import CloseButton from "./CloseButton";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const Nav = styled.nav`
   height: 100%;

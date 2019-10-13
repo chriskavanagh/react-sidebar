@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-// import { Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
 import Toolbar from "./components/Toolbar";
+import Contact from "./components/Contact";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -28,8 +31,12 @@ function App() {
       <Toolbar drawerClickHandler={clickHandler} />
       <SideDrawer open={sideDrawer} />
       {backdrop}
-      <main style={{ marginTop: "64px" }}>
-        <p>This is the page content!</p>
+      <main style={{ marginTop: "120px" }}>
+        <Switch>
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/" component={Home} />
+        </Switch>
       </main>
     </div>
   );
