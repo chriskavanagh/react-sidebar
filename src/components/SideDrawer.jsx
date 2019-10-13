@@ -24,7 +24,7 @@ const UL = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 25px;
+  padding-right: 65px;
 `;
 
 const Li = styled.li`
@@ -40,6 +40,15 @@ const A = styled.a`
     color: #fa923f;
   }
 `;
+const Styledlink = styled(NavLink)`
+  text-decoration: none;
+  color: #521751;
+
+  :active,
+  :hover {
+    color: #fa923f;
+  }
+`;
 
 const SideDrawer = props => {
   console.log(props);
@@ -47,10 +56,13 @@ const SideDrawer = props => {
     <Nav open={props.open}>
       <UL>
         <Li>
-          <A href="/">Products</A>
+          <Styledlink to="/">Home</Styledlink>
         </Li>
         <Li>
-          <A href="/">Users</A>
+          <Styledlink to="/contact">Contact</Styledlink>
+        </Li>
+        <Li>
+          <Styledlink to="/about">About</Styledlink>
         </Li>
       </UL>
     </Nav>

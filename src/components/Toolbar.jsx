@@ -25,16 +25,6 @@ const LI = styled.li`
   padding: 0 0.5rem;
 `;
 
-const A = styled.a`
-  color: #dadbd5;
-  text-decoration: none;
-
-  :hover,
-  :active {
-    color: #fa923f;
-  }
-`;
-
 const ALogo = styled.a`
   color: #f51963;
   text-decoration: none;

@@ -9,7 +9,7 @@ const Styledp = styled.p`
 const Styledli = styled.li`
   color: #fa5738;
   margin-bottom: 20px;
-  border-bottom: 1px dotted #ddd;
+  border-bottom: 1px dotted blue;
   padding-bottom: 10px;
 `;
 
@@ -21,7 +21,7 @@ const Styledul = styled.ul`
 
 const About = () => {
   return (
-    <React.Fragment>
+    <>
       <div style={{ marginRight: "90px" }}>
         <h1>About Page</h1>
         <Styledp>
@@ -51,7 +51,7 @@ const About = () => {
           <Styledli>Selima Script Font Free</Styledli>
         </Styledul>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
