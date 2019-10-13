@@ -31,7 +31,15 @@ function App() {
       <Toolbar drawerClickHandler={clickHandler} />
       <SideDrawer open={sideDrawer} />
       {backdrop}
-      <main style={{ marginTop: "120px" }}>
+      <main
+        style={{
+          marginTop: "120px",
+          width: "1200px",
+          margin: "120px auto 0 auto",
+          display: "grid",
+          gridTemplateColumns: "2fr 1fr"
+        }}
+      >
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
