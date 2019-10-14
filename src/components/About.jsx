@@ -30,11 +30,18 @@ const Styledh1 = styled.h1`
 
   @media (max-width: 968px) {
     text-align: center;
+    border-bottom: 4px solid black;
+    padding-bottom: 5px;
   }
 `;
 
 const Styledh2 = styled.h2`
   margin-top: 40px;
+
+  @media (max-width: 968px) {
+    text-align: center;
+    margin-top: 9rem;
+  }
 `;
 
 const About = props => {
