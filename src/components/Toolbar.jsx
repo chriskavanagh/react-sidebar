@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import DrawerToggleButton from "./DrawerButton";
 
-const Header = styled.header`
+const Styledheader = styled.header`
   position: fixed;
   width: 100%;
   background: #282c34;
@@ -61,7 +61,7 @@ const StyledLink = styled(NavLink)`
 
 const Toolbar = ({ drawerClickHandler }) => {
   return (
-    <Header>
+    <Styledheader>
       <Stylednav>
         <div>
           <DrawerToggleButton click={drawerClickHandler} />
@@ -84,7 +84,7 @@ const Toolbar = ({ drawerClickHandler }) => {
           </Styledul>
         </div>
       </Stylednav>
-    </Header>
+    </Styledheader>
   );
 };
 
