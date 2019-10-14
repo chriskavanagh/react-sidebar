@@ -32,7 +32,7 @@ const Styleda = styled.a`
   font-family: "Avenir Next";
 `;
 
-const Nav = styled.nav`
+const Stylednav = styled.nav`
   display: flex;
   align-items: center;
   height: 100%;
@@ -62,7 +62,7 @@ const StyledLink = styled(NavLink)`
 const Toolbar = ({ drawerClickHandler }) => {
   return (
     <Header>
-      <Nav>
+      <Stylednav>
         <div>
           <DrawerToggleButton click={drawerClickHandler} />
         </div>
@@ -83,7 +83,7 @@ const Toolbar = ({ drawerClickHandler }) => {
             </Styledli>
           </Styledul>
         </div>
-      </Nav>
+      </Stylednav>
     </Header>
   );
 };
