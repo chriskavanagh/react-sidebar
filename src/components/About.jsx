@@ -2,8 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Styledp = styled.p`
-  margin: 50px auto 20px auto;
+  margin: 50px 60px 20px auto;
   font-size: 1.2rem;
+
+  @media (max-width: 968px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const Styledli = styled.li`
@@ -19,11 +25,23 @@ const Styledul = styled.ul`
   padding: 0px;
 `;
 
-const About = () => {
+const Styledh1 = styled.h1`
+  font-size: 3rem;
+
+  @media (max-width: 968px) {
+    text-align: center;
+  }
+`;
+
+const Styledh2 = styled.h2`
+  margin-top: 40px;
+`;
+
+const About = props => {
   return (
     <>
-      <div style={{ marginRight: "90px" }}>
-        <h1>About Page</h1>
+      <div>
+        <Styledh1>About Page</Styledh1>
         <Styledp>
           The term avenir is French for “future”. As being the identify implies,
           the household requires inspiration in the geometric style of
@@ -40,7 +58,7 @@ const About = () => {
         </Styledp>
       </div>
       <div>
-        <h2>Recent Posts</h2>
+        <Styledh2>Recent Posts</Styledh2>
         <hr />
         <Styledul>
           <Styledli>Kollektif Typeface</Styledli>

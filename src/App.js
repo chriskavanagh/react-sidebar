@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 import { Route, Switch } from "react-router-dom";
+import Styledmain from "./styled/Main";
 import "./App.css";
 
 function App() {
@@ -31,22 +32,13 @@ function App() {
       <Toolbar drawerClickHandler={clickHandler} />
       <SideDrawer open={sideDrawer} />
       {backdrop}
-      <main
-        style={{
-          marginTop: "120px",
-          width: "1200px",
-          margin: "120px auto 0 auto",
-          display: "grid",
-          justifyItems: "center",
-          gridTemplateColumns: "2fr 1fr"
-        }}
-      >
+      <Styledmain>
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/" component={Home} />
         </Switch>
-      </main>
+      </Styledmain>
     </div>
   );
 }
