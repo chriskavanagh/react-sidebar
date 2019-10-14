@@ -12,7 +12,7 @@ const Header = styled.header`
   left: 0;
 `;
 
-const UL = styled.ul`
+const Styledul = styled.ul`
   text-decoration: none;
   color: white;
   list-style: none;
@@ -21,11 +21,11 @@ const UL = styled.ul`
   display: flex;
 `;
 
-const LI = styled.li`
+const Styledli = styled.li`
   padding: 0 0.5rem;
 `;
 
-const ALogo = styled.a`
+const Styleda = styled.a`
   color: #f51963;
   text-decoration: none;
   font-size: 1.7rem;
@@ -43,7 +43,7 @@ const Spacer = styled.div`
   flex: 1;
 `;
 
-const DivLogo = styled.div`
+const Styleddiv = styled.div`
   margin-left: 1.5rem;
 `;
 
@@ -66,22 +66,22 @@ const Toolbar = ({ drawerClickHandler }) => {
         <div className="toolbar__toggle-button">
           <DrawerToggleButton click={drawerClickHandler} />
         </div>
-        <DivLogo className="toolbar__logo">
-          <ALogo href="/">The Logo</ALogo>
-        </DivLogo>
+        <Styleddiv className="toolbar__logo">
+          <Styleda href="/">The Logo</Styleda>
+        </Styleddiv>
         <Spacer className="spacer" />
         <div className="toolbar_navigation-items">
-          <UL>
-            <LI>
+          <Styledul>
+            <Styledli>
               <StyledLink to="/about">About</StyledLink>
-            </LI>
-            <li>
+            </Styledli>
+            <Styledli>
               <StyledLink to="/contact">Contact</StyledLink>
-            </li>
-            <li>
+            </Styledli>
+            <Styledli>
               <StyledLink to="/">Home</StyledLink>
-            </li>
-          </UL>
+            </Styledli>
+          </Styledul>
         </div>
       </Nav>
     </Header>
