@@ -61,16 +61,16 @@ const StyledLink = styled(NavLink)`
 
 const Toolbar = ({ drawerClickHandler }) => {
   return (
-    <Header className="toolbar">
-      <Nav className="toolbar__navigation">
-        <div className="toolbar__toggle-button">
+    <Header>
+      <Nav>
+        <div>
           <DrawerToggleButton click={drawerClickHandler} />
         </div>
-        <Styleddiv className="toolbar__logo">
+        <Styleddiv>
           <Styleda href="/">The Logo</Styleda>
         </Styleddiv>
-        <Spacer className="spacer" />
-        <div className="toolbar_navigation-items">
+        <Spacer />
+        <div>
           <Styledul>
             <Styledli>
               <StyledLink to="/about">About</StyledLink>

@@ -18,17 +18,17 @@ const Button = styled.button`
   }
 `;
 
-const DivLine = styled.div`
+const Styleddiv = styled.div`
   width: 30px;
   height: 2px;
   background: #fff;
 `;
 
 const DrawerToggleButton = ({ click }) => (
-  <Button className="toggle-button" onClick={click}>
-    <DivLine className="toggle-button__line" />
-    <DivLine className="toggle-button__line" />
-    <DivLine className="toggle-button__line" />
+  <Button onClick={click}>
+    <Styleddiv />
+    <Styleddiv />
+    <Styleddiv />
   </Button>
 );
 
