@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
+import Topnav from "./components/Topnav";
 import Toolbar from "./components/Toolbar";
 import Contact from "./components/Contact";
 import Backdrop from "./components/Backdrop";
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div style={{ height: "100%" }}>
+      <Topnav />
       <Toolbar drawerClickHandler={clickHandler} />
       <SideDrawer open={sideDrawer} />
       {backdrop}
