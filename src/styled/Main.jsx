@@ -3,6 +3,7 @@ import styled from "styled-components";
 export default styled.main`
   display: grid;
   grid-template-columns: 2fr 1fr;
+
   margin: 250px auto 0 auto;
   max-width: 1200px;
 

@@ -26,6 +26,42 @@ const About = props => {
           ‘t’ having a curl for the base, and letters such since the ‘o’ which
           have been not specific, fantastic circles but optically corrected.
         </Styledp>
+
+        <Styledp>
+          Frutiger supposed Avenir being a more natural and organic
+          interpretation in the geometric design, more even in colour and well
+          suited for prolonged text, with particulars recalling a lot more
+          standard typefaces these types of given that the two-storey ‘a’ and
+          ‘t’ having a curl for the base, and letters such since the ‘o’ which
+          have been not specific, fantastic circles but optically corrected.
+        </Styledp>
+
+        <Styledp>
+          Frutiger supposed Avenir being a more natural and organic
+          interpretation in the geometric design, more even in colour and well
+          suited for prolonged text, with particulars recalling a lot more
+          standard typefaces these types of given that the two-storey ‘a’ and
+          ‘t’ having a curl for the base, and letters such since the ‘o’ which
+          have been not specific, fantastic circles but optically corrected.
+        </Styledp>
+
+        <Styledp>
+          Frutiger supposed Avenir being a more natural and organic
+          interpretation in the geometric design, more even in colour and well
+          suited for prolonged text, with particulars recalling a lot more
+          standard typefaces these types of given that the two-storey ‘a’ and
+          ‘t’ having a curl for the base, and letters such since the ‘o’ which
+          have been not specific, fantastic circles but optically corrected.
+        </Styledp>
+
+        <Styledp>
+          Frutiger supposed Avenir being a more natural and organic
+          interpretation in the geometric design, more even in colour and well
+          suited for prolonged text, with particulars recalling a lot more
+          standard typefaces these types of given that the two-storey ‘a’ and
+          ‘t’ having a curl for the base, and letters such since the ‘o’ which
+          have been not specific, fantastic circles but optically corrected.
+        </Styledp>
       </div>
       <div>
         <Styledh2>Recent Posts</Styledh2>
